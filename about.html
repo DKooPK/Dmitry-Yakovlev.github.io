@@ -3,15 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Дмитрий Яковлев | Главная</title>
+    <title>Дмитрий Яковлев | Обо мне</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     
-    <?require("require/header.php")?>
+    <nav class="navbar navbar-expand-lg px-3 bg-dark-subtle">
+    <div class="container-fluid">
+        <a class="navbar-brand fs-4 fw-bold" href="/">Дмитрий Яковлев</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav fs-5">
+            <li class="nav-item">
+            <a class="nav-link" href="/">
+                Главная
+            </a>
+            </li>
+            <div class="dot">|</div>
+            <li class="nav-item">
+            <a class="nav-link" href="about.html">Обо Мне</a>
+            </li>
+            <div class="dot">|</div>
+            <li class="nav-item">
+            <a class="nav-link" href="arts.html">Мои работы</a>
+            </li>
+            <div class="dot">|</div>
+            <li class="nav-item">
+            <a class="nav-link" href="contacts.html">Контакты</a>
+            </li>
+            <div class="dot">|</div>
+        </ul>
+        </div>
+    </div>
+    </nav>
 
     <div class="content p-5 bg-light-subtle">
+        
+        <h1 class="text-center">Обо мне</h1>
 
-        <div class="ad d-flex flex-column flex-md-row m-4 justify-content-sm-between align-items-center bg-dark-subtle">
+        <div class="ad d-flex flex-column flex-md-row m-4 justify-content-sm-between align-items-center bg-dark-subtle border border-dark rounded">
 
             <div class="flexpart image">
                 <a data-fslightbox href="assets/image/Dmitry.jpg">
@@ -50,7 +84,7 @@
 
         </div>
 
-        <div class="ad d-flex flex-column flex-md-row m-4 justify-content-sm-between align-items-center bg-dark-subtle">
+        <div class="ad d-flex flex-column flex-md-row m-4 justify-content-sm-between align-items-center bg-dark-subtle border border-dark rounded">
 
             <div class="flexpart image">
                 <a data-fslightbox href="assets/image/Dmitry.jpg">
@@ -72,7 +106,21 @@
 
     </div>
 
-     <?require("require/footer.php")?>
+    <footer class="fs-5 d-flex flex-column flex-sm-row  justify-content-sm-between align-items-center px-4 py-3 border-top bg-dark-subtle ">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2026 Дмитрий Яковлев</span>
+        </div> 
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class=" d-flex fw-bold">
+                <a class="text-body-secondary" href="https://vk.com/yaartslon" aria-label="VK">
+                    <img src="assets/image/vk.svg">
+                    Страница ВК
+                </a>
+            </li> 
+        </ul> 
+    </footer>
+    <script src="assets\js\bootstrap.js"></script>
+    <script src="assets\js\fslightbox.js"></script>
     
 </body>
 </html>
