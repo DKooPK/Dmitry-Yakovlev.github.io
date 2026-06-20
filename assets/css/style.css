@@ -50,20 +50,41 @@ a {
     border-radius: 0% !important;
     margin: 1%;
 }
-.card * {
-    border-radius: 0% !important;
-}
 
-.map, .map_text {
-    width: 40vw;
-    height: 60vh;
+
+.map {
+    width: 90%;
+    height: 40vw;
     margin: 2%;
     overflow: hidden;
+}
+
+.contact {
+    width: 18vw !important;
+
+}
+
+.text-indent {
+  text-indent: 1.5rem;
+}
+
+.w-45 {
+    width: 45% !important;
+}
+
+.card-img-top {
+    width:  100% !important;
+    height: 250px !important;
+    object-fit: cover !important;
 }
 
 @media screen and (width <= 991px) {
     .dot {
         display: none;
+    }
+
+    .contact {
+        width: 100% !important;
     }
 }
 
@@ -80,8 +101,9 @@ a {
         margin: 0 !important;
     }
 
-    .map, .map_text {
-        width: 80vw;
+    .map {
+        width: 90%;
+        height: 70vw;
     }
 }
 
